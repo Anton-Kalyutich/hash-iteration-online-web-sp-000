@@ -8,6 +8,6 @@
 
 def select_winner(passengers)
   passengers.find do |suite, name|
-    suite.starts_with("a") && name.starts_with("a")
+    suite == suite_a && name.starts_with("a")
   end
 end
