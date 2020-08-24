@@ -7,5 +7,5 @@
 # }
 
 def select_winner(passengers)
-  
+  passengers.find {|suite, name| 
 end
