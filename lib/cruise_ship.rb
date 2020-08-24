@@ -7,7 +7,7 @@
 # }
 
 def select_winner(passengers)
-  passengers.find do |suite, name|
+  passengers.each do |suite, name|
     suite == :suite_a && name.starts_with("A")
   end
 end
