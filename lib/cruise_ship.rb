@@ -7,5 +7,7 @@
 # }
 
 def select_winner(passengers)
-  passengers.find {|suite, name| suite.starts_with("a") && name.starts_with("a")
+  passengers.find do |suite, name|
+    suite.starts_with("a") && name.starts_with("a")
+  end
 end
